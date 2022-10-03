@@ -72,7 +72,9 @@
               <span data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">Yuris</span>
             </h1>
 
-            <div class="hero-subtitle light" data-aos-direction="fade" data-aos-delay="1000">SEPT <span>24</span> 2022</div>
+            <div class="hero-subtitle light" data-aos="flip-up" data-aos-delay="1500" data-aos-duration="1500">
+              Nov <span>06</span> 2022
+            </div>
 
             <div data-aos-direction="fade" data-aos-delay="1000">
               <a href="#rsvp" class="btn btn-light scrollto">RSVP</a>
