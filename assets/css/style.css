@@ -453,7 +453,7 @@ section {
   position: relative;
   font-size: 62pt;
   font-family: "Playfair Display", serif;
-  line-height: .7
+  line-height: .9
 }
 
 .section-title-lg.light {
@@ -2086,7 +2086,7 @@ p.center {
   color: #fff
 }
 
-h2.nama_undangan {
+h2.nm_undangan {
   font-size: 40px;
   font-weight: 800;
   text-transform: none;
@@ -3565,15 +3565,17 @@ h2.nama_undangan {
 }
 
 .map-info-container .info-wrapper .location-info h4.has-icon {
-  padding-left: 80px;
+  padding-left: 60px;
   padding-top: 10px
 }
 
-.map-info-container .info-wrapper .location-info h4.has-icon i {
+.map-info-container .info-wrapper .location-info h4.has-icon img {
   position: absolute;
-  left: 0;
+  left: -30px;
   top: 6px;
-  font-size: 50pt;
+  height: 80px;
+  width: 80px;
+  /* font-size: 50pt; */
   -khtml-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: .5

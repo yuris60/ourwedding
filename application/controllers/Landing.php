@@ -8,9 +8,14 @@ class Landing extends CI_Controller
     parent::__construct();
   }
 
-  public function index($nama_undangan)
+  public function index()
   {
-    $data['nama_undangan'] = urldecode($this->uri->segment(2));
+    $nm_undangan = urldecode($this->uri->segment(2));
+    if (empty($nm_undangan)) {
+      $data['nm_undangan'] = "Tamu Undangan";
+    } else {
+      $data['nm_undangan'] = urldecode($nm_undangan);
+    }
 
     $this->load->view('templates/header.php');
     $this->load->view('landing_page.php', $data);

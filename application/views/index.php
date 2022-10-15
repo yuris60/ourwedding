@@ -1,3 +1,18 @@
+<!-- BEGIN PRELOADER -->
+<div id="preloader">
+  <div class="loading-heart">
+    <svg viewBox="0 0 512 512" width="100">
+      <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+    </svg>
+    <div class="preloader-title">
+      Kartika<br>
+      <small>&</small><br>
+      Yuris
+    </div>
+  </div>
+</div>
+<!-- END PRELOADER -->
+
 <div id="wrapper">
 
   <!-- BEGIN HEADER -->
@@ -64,7 +79,7 @@
         <div class="col-sm-12">
 
           <div class="hero-wrapper v-center">
-            <h2 data-aos-direction="fade" data-aos-delay="600">Save the Date</h2>
+            <h2 data-aos="fade" data-aos-delay="600">Save the Date</h2>
 
             <h1 class="hero-title light ">
               <span data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">Kartika</span>
@@ -76,9 +91,9 @@
               Nov <span>06</span> 2022
             </div>
 
-            <div data-aos-direction="fade" data-aos-delay="1000">
+            <!-- <div data-aos="fade" data-aos-delay="1000">
               <a href="#rsvp" class="btn btn-light scrollto">RSVP</a>
-            </div>
+            </div> -->
           </div>
 
         </div>
@@ -92,13 +107,13 @@
   <section id="about-us">
     <div class="container">
       <div class="row about-elems-wrapper">
-        <div class="element col-md-6 col-xl-4 offset-xl-2" data-aos-direction="fade-left" data-aos-delay="300">
+        <div class="element col-md-6 col-xl-4 offset-xl-2" data-aos="fade-left" data-aos-delay="300">
           <div class="image">
-            <img src="images/groom.jpg" alt="" width="600" height="714" />
+            <img src="<?= base_url('assets/images/') ?>yuris.jpg" alt="" width="600" height="714" />
             <div class="hover-info neela-style">
               <div class="content">
-                <h3>Andrew Miller<small>The Groom</small></h3>
-                <p>I am so incredibly blessed and excited to spend everyday for the rest of my life with my best friend!</p>
+                <h3>Yuris Alkhalifi<small>Pengantin Pria</small></h3>
+                <p>Putra Pertama dari Bapak Romli dan Ibu Rina Wati</p>
                 <ul class="sn-icons">
                   <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
                   <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
@@ -109,17 +124,18 @@
           </div>
         </div>
 
-        <div class="divider-about-us" data-aos-direction="fade" data-aos-delay="500">
+        <div class="divider-about-us" data-aos="fade-up" data-aos-delay="500">
           <i class="icon-two-hearts"></i>
+          <!-- <img src="<?= base_url('assets/images/two-of-hearts.png') ?>" alt="Love"> -->
         </div>
 
-        <div class="element col-md-6 col-xl-4" data-aos-direction="fade-right" data-aos-delay="400">
+        <div class="element col-md-6 col-xl-4" data-aos="fade-right" data-aos-delay="400">
           <div class="image">
-            <img src="images/bride.jpg" alt="" width="600" height="714" />
+            <img src="<?= base_url('assets/images/') ?>kartika.jpg" alt="" width="600" height="714" />
             <div class="hover-info neela-style">
               <div class="content">
-                <h3>Isabella Walker<small>The Bride</small></h3>
-                <p>She's everything I've always dreamed of and I'm so excited to spend the rest of my life with her!</p>
+                <h3>Kartika Puspita<small>Pengantin Wanita</small></h3>
+                <p>Putri Pertama dari Bapak Karsono dan Ibu Dasiroh</p>
                 <ul class="sn-icons">
                   <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
                   <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
@@ -132,10 +148,18 @@
       </div>
 
       <div class="row">
-        <div class="about-us-desc col-lg-8 offset-lg-2" data-aos-direction="fade-bottom" data-aos-delay="300">
+        <div class="about-us-desc col-lg-8 offset-lg-2" data-aos="fade-bottom" data-aos-delay="300">
           <h3><small>We are</small>Getting Married</h3>
-          <p>Today and always, beyond tomorrow, I need you beside me, always as my best friend, lover and forever soul mate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt porttitor venenatis. Vestibulum sit amet est nisl. Vestibulum iaculis finibus sem nec condimentum. Quisque nulla orci, aliquet sit amet sem eget, pellentesque euismod enim. Aenean quis nisl at est consequat elementum sed vel turpis. Phasellus dignissim sit amet orci vitae mattis. Phasellus a imperdiet ligula, efficitur dignissim ex. Mauris placerat aliquet sem commodo molestie.</p>
-          <img src="images/signature-2.png" alt="Andrew and Isabella">
+          <p style="font-size: 18px;">Dan di antara tanda-tanda kekuasaan Allah,
+            diciptakan-Nya pasangan hidup dari jenismu sendiri,
+            supaya kamu cenderung dan merasa tenteram kepadanya,
+            dan dijadikan-Nya diantaramu rasa kasih dan sayang.
+            Sesungguhnya pada yang demikian itu benar-benar terdapat
+            tanda-tanda bagi kaum yang berfikir.
+            <br><br>
+            <strong>Qs. Ar-Ruum : 21</strong>
+          </p>
+          <!-- <img src="images/signature-2.png" alt="Andrew and Isabella"> -->
         </div>
       </div>
     </div>
@@ -161,113 +185,105 @@
       <div class="row">
         <div class="col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
           <div class="timeline">
-            <div class="year" data-aos-direction="fade-top" data-aos-delay="250">
-              <span class="neela-style">2018</span>
+            <div class="year" data-aos="fade-top" data-aos-delay="250">
+              <span class="neela-style">2016</span>
             </div>
 
             <div class="template-1">
-              <div class="date" data-parallax="3" data-aos-direction="fade" data-aos-delay="350">
-                <span class="neela-style">22 September</span>
+              <div class="date" data-parallax="3" data-aos="fade" data-aos-delay="350">
+                <span class="neela-style">13 Januari</span>
               </div>
 
-              <div class="image-1" data-parallax="-4" data-aos-direction="fade-left" data-aos-delay="250">
-                <img src="images/timeline-first-date.jpg" alt="" width="600" height="600">
+              <div class="image-1" data-parallax="-4" data-aos="fade-left" data-aos-delay="250">
+                <img src="<?= base_url('assets/') ?>images/timeline-first-date.jpg" alt="" width="600" height="600">
               </div>
 
-              <div class="image-2" data-parallax="6" data-aos-direction="fade-right" data-aos-delay="250">
-                <img src="images/timeline-first-kiss.jpg" alt="" width="600" height="818">
+              <div class="image-2" data-parallax="6" data-aos="fade-right" data-aos-delay="250">
+                <img src="<?= base_url('assets/') ?>images/timeline-first-date2.jpg" alt="" width="600" height="818">
               </div>
 
-              <div class="description-wrapper" data-parallax="-6" data-aos-direction="fade-bottom" data-aos-delay="250">
-                <div class="description" data-parallax="-6" data-aos-direction="fade-bottom" data-aos-delay="250">
+              <div class="description-wrapper" data-parallax="-6" data-aos="fade-bottom" data-aos-delay="250">
+                <div class="description" data-parallax="-6" data-aos="fade-bottom" data-aos-delay="250">
                   <div class="neela-style">
-                    <h4>Our first date & kiss</h4>
-                    <p>Andrew was extremely nervous. He was afraid to expose his feelings to Isabella, but didn’t want to risk staying in the friend zone. So it was now or never! After all, Isabella was the one. "It was about time!" she said. It was...PERFECT!</p>
+                    <h4>Pertemuan dikegiatan KANIRA RANTING</h4>
+                    <p>Awalnya kami bertemu pada kegiatan KANIRA RANTING Tahun 2016 yang diselenggarakan oleh Dewan Kerja Gerakan Pramuka Kwartir Ranting Karawang Barat (DKR Karawang Barat). Dimana Kartika sebagai peserta dan Yuris sebagai Ketua DKR Karawang Barat.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="year" data-aos-direction="fade-top" data-aos-delay="250">
+            <div class="year" data-aos="fade-top" data-aos-delay="250">
               <span class="neela-style">2019</span>
             </div>
 
             <div class="gallery-container">
-              <div class="timeline-gallery-wrapper" data-aos-direction="fade-left" data-aos-delay="250">
-                <div class="timeline-gallery owl-carousel">
+              <div class="timeline-gallery-wrapper" data-aos="fade-left" data-aos-delay="250">
+                <div class="timeline-gallery owl-carousel" id="timeline">
                   <div class="item">
-                    <a class="hover-img" href="images/timeline-slider-img1.jpg" data-lightbox="gallery-timeline" title="Our Vacations"><span class="btn btn-light btn-sm">+</span></a>
-                    <img src="images/timeline-slider-img1.jpg" alt="" width="620" height="431" />
+                    <a class="hover-img" href="<?= base_url('assets/') ?>images/timeline-progress-1.jpg" data-lightbox="gallery-timeline" title="Dokumentasi Kami"><span class="btn btn-light btn-sm">+</span></a>
+                    <img src="<?= base_url('assets/') ?>images/timeline-progress-1.jpg" width="100px" />
                   </div>
 
                   <div class="item">
-                    <a class="hover-img" href="images/timeline-slider-img2.jpg" data-lightbox="gallery-timeline" title="Our Vacations"><span class="btn btn-light btn-sm">+</span></a>
-                    <img src="images/timeline-slider-img2.jpg" alt="" width="620" height="431" />
+                    <a class="hover-img" href="<?= base_url('assets/') ?>images/timeline-progress-2.jpg" data-lightbox="gallery-timeline" title="Dokumentasi Kami"><span class="btn btn-light btn-sm">+</span></a>
+                    <img src="<?= base_url('assets/') ?>images/timeline-progress-2.jpg" width="100px" />
                   </div>
 
                   <div class="item">
-                    <a class="hover-img" href="images/timeline-slider-img3.jpg" data-lightbox="gallery-timeline" title="Our Vacations"><span class="btn btn-light btn-sm">+</span></a>
-                    <img src="images/timeline-slider-img3.jpg" alt="" width="620" height="431" />
+                    <a class="hover-img" href="<?= base_url('assets/') ?>images/timeline-progress-3.jpg" data-lightbox="gallery-timeline" title="Dokumentasi Kami"><span class="btn btn-light btn-sm">+</span></a>
+                    <img src="<?= base_url('assets/') ?>images/timeline-progress-3.jpg" width="100px" />
                   </div>
                   <div class="item">
-                    <a class="hover-img" href="images/timeline-slider-img4.jpg" data-lightbox="gallery-timeline" title="Our Vacations"><span class="btn btn-light btn-sm">+</span></a>
-                    <img src="images/timeline-slider-img4.jpg" alt="" width="620" height="431" />
+                    <a class="hover-img" href="<?= base_url('assets/') ?>images/timeline-progress-4.jpg" data-lightbox="gallery-timeline" title="Dokumentasi Kami"><span class="btn btn-light btn-sm">+</span></a>
+                    <img src="<?= base_url('assets/') ?>images/timeline-progress-4.jpg" width="100px" />
                   </div>
                   <div class="item">
-                    <a class="hover-img" href="images/timeline-slider-img5.jpg" data-lightbox="gallery-timeline" title="Our Vacations"><span class="btn btn-light btn-sm">+</span></a>
-                    <img src="images/timeline-slider-img5.jpg" alt="" width="620" height="431" />
+                    <a class="hover-img" href="<?= base_url('assets/') ?>images/timeline-progress-5.jpg" data-lightbox="gallery-timeline" title="Dokumentasi Kami"><span class="btn btn-light btn-sm">+</span></a>
+                    <img src="<?= base_url('assets/') ?>images/timeline-progress-5.jpg" width="100px" />
                   </div>
                   <div class="item">
-                    <a class="hover-img" href="images/timeline-slider-img6.jpg" data-lightbox="gallery-timeline" title="Our Vacations"><span class="btn btn-light btn-sm">+</span></a>
-                    <img src="images/timeline-slider-img6.jpg" alt="" width="620" height="431" />
-                  </div>
-                  <div class="item">
-                    <a class="hover-img" href="images/timeline-slider-img7.jpg" data-lightbox="gallery-timeline" title="Our Vacations"><span class="btn btn-light btn-sm">+</span></a>
-                    <img src="images/timeline-slider-img7.jpg" alt="" width="620" height="431" />
-                  </div>
-                  <div class="item">
-                    <a class="hover-img" href="images/timeline-slider-img8.jpg" data-lightbox="gallery-timeline" title="Our Vacations"><span class="btn btn-light btn-sm">+</span></a>
-                    <img src="images/timeline-slider-img8.jpg" alt="" width="620" height="431" />
+                    <a class="hover-img" href="<?= base_url('assets/') ?>images/timeline-progress-6.jpg" data-lightbox="gallery-timeline" title="Dokumentasi Kami"><span class="btn btn-light btn-sm">+</span></a>
+                    <img src="<?= base_url('assets/') ?>images/timeline-progress-6.jpg" width="100px" />
                   </div>
                 </div>
               </div>
 
-              <div class="description-wrapper" data-aos-direction="fade-bottom" data-aos-delay="250">
+              <div class="description-wrapper" data-aos="fade-bottom" data-aos-delay="250">
                 <div class="description">
                   <div class="neela-style">
-                    <h4>Some of our most memorable moments</h4>
-                    <p>They had taken overnight trips before, but this was their first huge vacations outside the USA. Isabella and Andrew travelled to the Baltic region and visited a number of countries including Iceland, Finland, Denmark, Russia, Poland and Germany.</p>
+                    <h4>Perjalanan Cinta Kami</h4>
+                    <p>Cinta yang kami perjuangkan, tidaklah mudah. Karena untuk sampai jenjang lamaran & pernikahan, Kartika harus menunggu Yuris sampai lulus S2 pada tahun 2021 dan Yuris menunggu Kartika sampai lulus S1 pada tahun 2022.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="year" data-aos-direction="fade-top" data-aos-delay="250">
-              <span class="neela-style">2021</span>
+            <div class="year" data-aos="fade-top" data-aos-delay="250">
+              <span class="neela-style">2022</span>
             </div>
 
             <div class="template-2">
-              <div class="date" data-parallax="3" data-aos-direction="fade" data-aos-delay="250">
-                <span class="neela-style">15 July</span>
+              <div class="date" data-parallax="3" data-aos="fade" data-aos-delay="250">
+                <span class="neela-style">14 Agustus</span>
               </div>
 
-              <div class="videoEmbed" data-parallax="6" data-aos-direction="fade-top" data-aos-delay="250">
+              <!-- <div class="videoEmbed" data-parallax="6" data-aos="fade-top" data-aos-delay="250">
                 <iframe src="https://player.vimeo.com/video/136240001" width="590" height="330" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div> -->
+
+              <div class="image-1" data-parallax="-2" data-aos="fade-left" data-aos-delay="250">
+                <img src="<?= base_url('assets/') ?>images/timeline-proposal-img1.jpg" alt="" width="600" height="818">
               </div>
 
-              <div class="image-1" data-parallax="-2" data-aos-direction="fade-left" data-aos-delay="250">
-                <img src="images/timeline-proposal-img1.jpg" alt="" width="600" height="818">
+              <div class="image-2" data-parallax="4" data-aos="fade-right" data-aos-delay="250">
+                <img src="<?= base_url('assets/') ?>images/timeline-proposal-img2.jpg" alt="" width="600" height="800">
               </div>
 
-              <div class="image-2" data-parallax="4" data-aos-direction="fade-right" data-aos-delay="250">
-                <img src="images/timeline-proposal-img2.jpg" alt="" width="600" height="800">
-              </div>
-
-              <div class="description-wrapper" data-parallax="-5" data-aos-direction="fade-bottom" data-aos-delay="250">
-                <div class="description" data-parallax="-6" data-aos-direction="fade-bottom" data-aos-delay="250">
+              <div class="description-wrapper" data-parallax="-5" data-aos="fade-bottom" data-aos-delay="250">
+                <div class="description" data-parallax="-6" data-aos="fade-bottom" data-aos-delay="250">
                   <div class="neela-style">
-                    <h4>She said Yes!</h4>
-                    <p>So how did Mark pop the question? On a Cruise ... off the shore ... of the Cayman Islands! (YES!) On their way down to dinner with the Ship's Captain, Mark's nerves got the best of him and he pulled Sarah back to the room and straight onto the balcony for the best proposal a girl could ask for!</p>
+                    <h4>Proses Lamaran</h4>
+                    <p>Alhamdulillah setelah melewati hambatan & rintangan yang ada, pada akhirnya Yuris menepati janjinya untuk menjemput sang pujaan hati yang selama ini ia perjuangkan yakni Kartika. Pada momen ini, berjanji sehidup sesurga selalu berdua (Insya Allah)</p>
                   </div>
                 </div>
               </div>
@@ -275,8 +291,10 @@
           </div>
 
           <div class="timeline_footer">
-            <div data-aos-direction="fade-top" data-aos-delay="250"><i class="icon-diamond-ring"></i></div>
-            <div class="punchline" data-aos-direction="fade-bottom" data-aos-delay="250"><small>This is where our</small>forever<br>begins!</div>
+            <div data-aos="fade-top" data-aos-delay="250" class="mb-3">
+              <img src="<?= base_url('assets/images/wedding-ring.png') ?>" width="9%" alt="">
+            </div>
+            <div class="punchline" data-aos="fade-bottom" data-aos-delay="250"><small>This is where our</small>forever<br>begins!</div>
           </div>
 
         </div>
@@ -297,8 +315,8 @@
       </div>
 
       <div class="row">
-        <div class="col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 center">
-          <div class="invite neela-style" data-aos-direction="fade-left" data-aos-delay="100">
+        <div class="col-md-12 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1 center">
+          <div class="invite neela-style" data-aos="fade-left" data-aos-delay="100">
             <div class="invite_title">
               <div class="text">
                 Save<small>the</small>Date
@@ -306,11 +324,13 @@
             </div>
 
             <div class="invite_info">
-              <h2>Isabella <small>&</small> Andrew</h2>
+              <h2>Yuris Alkhalifi, M.Kom., CPDSA</h2>
+              <h2>&</h2>
+              <h2>Kartika Puspita, S.Kom., CPDSA</h2>
 
-              <div class="uppercase">Request the honor of your presence on their wedding day</div>
-              <div class="date">September 24, 2022<small>at 03:00 pm</small></div>
-              <div class="uppercase">At Birchwood Church<br>4181 Birchwood Ave Seal Beach, CA</div>
+              <div class="uppercase">Tanpa mengurangi hormat, kami bermaksud untuk mengundang Bapak/Ibu/Sdr/i pada acara pernikahan kami yang akan dilaksanakan pada :</div>
+              <div class="date">6 November 2022<small>Akad pukul 09.00 WIB</small></div>
+              <div class="uppercase">Kp. Nyangkokot, RT 008 RW 004, Desa Wanasari, Kec. Telukjambe Barat Kab. Karawang 41361</div>
 
               <h5>Reception to follow</h5>
             </div>
@@ -337,38 +357,46 @@
         <div class="col-lg-12 col-xl-10 offset-xl-1">
 
           <div class="map-info-container">
-            <div class="info-wrapper" data-aos-direction="fade-bottom" data-aos-delay="100">
+            <div class="info-wrapper" data-aos="fade-bottom" data-aos-delay="100">
               <div class="location-info">
                 <div class="neela-style">
-                  <h4 class="has-icon"><i class="icon-big-church"></i>Ceremony<small>03:00pm</small></h4>
-                  <h5>Birchwood Church</h5>
-                  <p>4181 Birchwood Ave Seal Beach, CA<br>33.776825, -118.059113</p>
+                  <h4 class="has-icon">
+                    <img src="<?= base_url('assets/images/star.png') ?>" width="30%" alt="">
+                    Akad<small>09.00 WIB</small>
+                  </h4>
+                  <h5>Rumah Mempelai Wanita</h5>
+                  <p>Kp. Nyangkokot, RT 008 RW 004, Desa Wanasari, Kec. Telukjambe Barat Kab. Karawang 41361</p>
 
                   <div class="info-map-divider"></div>
 
-                  <h4 class="has-icon"><i class="icon-champagne-glasses"></i>Reception<small>05:30pm</small></h4>
-                  <h5>Old Ranch Country Club</h5>
-                  <p>29033 West Lake Drive, Agoura Hills, CA<br>33.776025, -118.065314</p>
+                  <h4 class="has-icon">
+                    <img src="<?= base_url('assets/images/party.png') ?>" width="30%" alt="">
+                    Resepsi<small>10.00 WIB</small>
+                  </h4>
+                  <h5>Rumah Mempelai Wanita</h5>
+                  <p>Kp. Nyangkokot, RT 008 RW 004, Desa Wanasari, Kec. Telukjambe Barat Kab. Karawang 41361</p>
                 </div>
               </div>
             </div>
 
-            <div class="map-wrapper" data-aos-direction="fade" data-aos-delay="100">
-              <div id="map_canvas" class="gmap"></div>
-
-              <div class="map_pins">
+            <div class="map-wrapper" data-aos="fade" data-aos-delay="100">
+              <!-- <div id="map_canvas" class="gmap"></div> -->
+              <div id="map_canvas" class="gmaps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d366643.00196576485!2d106.85756664185215!3d-6.512857901959763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699d35d6a8b58b%3A0xabdf346163b05e8d!2sM62H%2B2PQ%20Warung%20Arfadhia%20(Atih)%2C%20Kp.Nyangkokot%2C%20Wanasari%2C%20Kec.%20Telukjambe%20Bar.%2C%20Karawang%2C%20Jawa%20Barat%2041361!5e0!3m2!1sid!2sid!4v1664947278329!5m2!1sid!2sid" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <!-- <div class="map_pins">
                 <ul class="pins">
                   <li><i class="fas fa-bell"></i>Ceremony</li>
                   <li><i class="fas fa-glass-cheers"></i>Reception</li>
                   <li><i class="fas fa-bed"></i>Accomodations</li>
                   <li><i class="fas fa-plane"></i>Transportation</li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
 
           <div class="center">
-            <a href="#rsvp" class="btn btn-primary scrollto">RSVP</a>
+            <a href="https://goo.gl/maps/tB1X4yzSj6Z33Juv5" class="btn btn-primary scrollto" target="_blank">Cek Maps</a>
           </div>
         </div>
       </div>
@@ -377,78 +405,13 @@
   <!-- END WEDDING LOCATION SECTION -->
 
 
-  <!-- BEGIN BRIDESMAIDS SECTION -->
-  <section id="bridesmaids" class="parallax-background bg-color-overlay">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-sm-12">
-          <h2 class="section-title light">Bridesmaids</h2>
-        </div>
-      </div>
-
-      <div class="row center">
-        <div class="element bmaid-gmen col-sm-6 col-lg-4" data-aos-direction="fade-top" data-aos-delay="300">
-          <div class="image">
-            <img src="images/bridesmaids-img1.jpg" alt="" width="434" height="434" />
-            <div class="hover-info neela-style">
-              <div class="content center">
-                <h3>Emily Garcia<small>Maid of honour</small></h3>
-                <ul class="sn-icons">
-                  <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="element bmaid-gmen col-sm-6 col-lg-4" data-aos-direction="fade-top" data-aos-delay="400">
-          <div class="image">
-            <img src="images/bridesmaids-img2.jpg" alt="" width="434" height="434" />
-            <div class="hover-info neela-style">
-              <div class="content center">
-                <h3>Rachel Harris<small>Bridesmaid</small></h3>
-                <ul class="sn-icons">
-                  <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="element bmaid-gmen col-sm-6 col-lg-4" data-aos-direction="fade-top" data-aos-delay="500">
-          <div class="image">
-            <img src="images/bridesmaids-img3.jpg" alt="" width="434" height="434" />
-            <div class="hover-info neela-style">
-              <div class="content center">
-                <h3>Sarah Williams<small>Bridesmaid</small></h3>
-                <ul class="sn-icons">
-                  <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- END BRIDESMAIDS SECTION -->
-
-
   <!-- BEGIN TESTIMONIALS SECTION -->
-  <section id="testimonials" class="bg-color side-flowers-light">
+  <!-- <section id="testimonials" class="bg-color side-flowers-light">
     <div class="container">
 
       <div class="row">
         <div class="col-lg-12 col-xl-10 offset-xl-1">
-          <div id="testimonials-slider" class="owl-carousel testimonials light" data-aos-direction="fade-bottom" data-aos-delay="300">
+          <div id="testimonials-slider" class="owl-carousel testimonials light quotes" id="quotes" data-aos="fade-up" data-aos-delay="300">
             <div class="item">
               <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius ante libero, a sollicitudin elit malesuada et. Nulla facilisi. Pellentesque magna diam, mattis a gravida eget, lobortis ut velit. Nam interdum hendrerit nisl et malesuada. Nulla facilisis velit neque, sed ultrices nibh facilisis non.</blockquote>
 
@@ -476,136 +439,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- END TESTIMONIALS SECTION -->
 
-  <!-- BEGIN GROOMSMEN SECTION -->
-  <section id="groomsmen" class="parallax-background bg-color-overlay">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-sm-12">
-          <h2 class="section-title light">Groomsmen</h2>
-        </div>
-      </div>
-
-      <div class="row center">
-        <div class="element bmaid-gmen col-sm-6 col-lg-4" data-aos-direction="fade-top" data-aos-delay="300">
-          <div class="image">
-            <img src="images/groomsmen-img1.jpg" alt="" width="434" height="434" />
-            <div class="hover-info neela-style">
-              <div class="content center">
-                <h3>Michael Scott<small>Best Man</small></h3>
-                <ul class="sn-icons">
-                  <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="element bmaid-gmen col-sm-6 col-lg-4" data-aos-direction="fade-top" data-aos-delay="400">
-          <div class="image">
-            <img src="images/groomsmen-img2.jpg" alt="" width="434" height="434" />
-            <div class="hover-info neela-style">
-              <div class="content center">
-                <h3>Daniel Wright<small>Groomsman</small></h3>
-                <ul class="sn-icons">
-                  <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="element bmaid-gmen col-sm-6 col-lg-4" data-aos-direction="fade-top" data-aos-delay="500">
-          <div class="image">
-            <img src="images/groomsmen-img3.jpg" alt="" width="434" height="434" />
-            <div class="hover-info neela-style">
-              <div class="content center">
-                <h3>Ryan Anderson<small>Groomsman</small></h3>
-                <ul class="sn-icons">
-                  <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- END GROOMSMEN SECTION -->
-
-
-  <!-- BEGIN WEDDING GIFTS SECTION -->
-  <section id="giftregistry" class="section-bg-color parallax-background">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-xl-6">
-          <h2 class="section-title-lg uppercase desc"><small>Gift</small><strong>Registry</strong></h2>
-          <div class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius ante libero, amet as sollicitudin elit malesuada et. Nulla facilisi. Pellentesque magna diam, mattis gravida eget, lobortis ut velit. Nam interdum hendrerit nisl et malesuada.</div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-8 col-xl-6">
-          <ul class="wedding-gifts">
-
-            <li id="gift-list" data-aos-direction="fade-bottom" data-aos-delay="300">
-              <div class="neela-style">
-                <i class="icon-wedding"></i>
-                <h3>Check our<br>wedding gift list</h3>
-
-                <div class="info">
-                  <a href="#" class="img"><img src="images/macys-logo.png" alt="Macy's" /></a>
-                  <a href="#" class="img"><img src="images/bed-bath-beyond-logo.png" alt="Target" /></a>
-                </div>
-              </div>
-            </li>
-
-            <li id="help-wedding" data-aos-direction="fade-bottom" data-aos-delay="300">
-              <div class="neela-style">
-                <i class="icon-wedding-day"></i>
-                <h3>Help with the<br>wedding planning</h3>
-
-                <div class="info">
-                  <a href="#rsvp" class="btn btn-primary reverse scrollto"><i class="fa fa-envelope"></i>Contact us</a>
-                </div>
-              </div>
-            </li>
-
-            <li id="help-honeymoon" data-aos-direction="fade-bottom" data-aos-delay="300">
-              <div class="neela-style">
-                <i class="icon-honeymoon"></i>
-                <h3>Contribute to our<br>dream honeymoon</h3>
-
-                <div class="info">
-                  <a href="#" class="btn btn-primary reverse">$50</a>
-                  <a href="#" class="btn btn-primary reverse">$100</a>
-                  <a href="#" class="btn btn-primary reverse">$200</a>
-                  <br>
-                  <a href="#" id="otheramount" class="btn btn-primary reverse">Other Amount</a>
-                </div>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- END WEDDING GIFTS SECTION -->
-
-
   <!-- BEGIN GALLERY SECTION -->
-  <section id="gallery" class="section-bg-color">
+  <!-- <section id="gallery" class="section-bg-color">
 
     <div class="container">
       <div class="row">
@@ -623,294 +461,289 @@
         <ul>
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img1.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb4.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb1.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb4.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img2.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb2.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb2.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb2.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img3.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb3.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb3.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb3.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img4.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb7.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb4.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb7.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img5.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb5.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb5.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb5.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img6.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb6.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb6.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb6.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img7.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb5.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb7.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb5.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img8.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb8.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb8.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb8.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img9.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb9.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb9.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb9.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img10.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb10.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb10.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb10.jpg" alt="" width="380" height="380" />
           </li>
         </ul>
         <ul>
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img11.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb7.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb11.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb7.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img12.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb6.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb12.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb6.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img13.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb5.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb13.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb5.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img14.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb8.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb14.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb8.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img15.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb15.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb15.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb15.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img16.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb16.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb16.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb16.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img17.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb17.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb17.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb17.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img18.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb18.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb18.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb18.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img19.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb19.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb19.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb19.jpg" alt="" width="380" height="380" />
           </li>
 
           <li>
             <div class="hover-info">
-              <a class="btn btn-light btn-sm only-icon" href="images/gallery-img20.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
+              <a class="btn btn-light btn-sm only-icon" href="<?= base_url('assets/images/gallery/') ?>gallery-thumb8.jpg" data-lightbox="WeddingPhotos" title="Wedding Photos">
                 <i class="fa fa-link"></i>
               </a>
             </div>
-            <img src="images/gallery-thumb20.jpg" alt="" width="380" height="380" />
+            <img src="<?= base_url('assets/images/gallery/') ?>gallery-thumb8.jpg" alt="" width="380" height="380" />
           </li>
         </ul>
+      </div>
+    </div>
+  </section> -->
+  <section id="gallery" class="section-bg-color">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="section-title">Wedding Gallery</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-0">
+      <div class="col-xl-3 col-6 p-0" data-aos="flip-left">
+        <img src="<?= base_url('assets/images/gallery/gallery-thumb1.jpg') ?>" width="100%">
+      </div>
+      <div class="col-xl-3 col-6 p-0" data-aos="flip-left">
+        <img src="<?= base_url('assets/images/gallery/gallery-thumb4.jpg') ?>" width="100%">
+      </div>
+      <div class="col-xl-3 col-6 p-0" data-aos="flip-left">
+        <img src="<?= base_url('assets/images/gallery/gallery-thumb3.jpg') ?>" width="100%">
+      </div>
+      <div class="col-xl-3 col-6 p-0" data-aos="flip-left">
+        <img src="<?= base_url('assets/images/gallery/gallery-thumb2.jpg') ?>" width="100%">
+      </div>
+    </div>
+    <div class="row mt-0">
+      <div class="col-xl-3 col-6 p-0" data-aos="flip-left">
+        <img src="<?= base_url('assets/images/gallery/gallery-thumb5.jpg') ?>" width="100%">
+      </div>
+      <div class="col-xl-3 col-6 p-0" data-aos="flip-left">
+        <img src="<?= base_url('assets/images/gallery/gallery-thumb6.jpg') ?>" width="100%">
+      </div>
+      <div class="col-xl-3 col-6 p-0" data-aos="flip-left">
+        <img src="<?= base_url('assets/images/gallery/gallery-thumb7.jpg') ?>" width="100%">
+      </div>
+      <div class="col-xl-3 col-6 p-0" data-aos="flip-left">
+        <img src="<?= base_url('assets/images/gallery/gallery-thumb8.jpg') ?>" width="100%">
       </div>
     </div>
   </section>
   <!-- END GALLERY SECTION -->
 
-
-  <!-- BEGIN BLOG SECTION -->
-  <section id="blog" class="section-bg-color divider-bottom-2 divider-pattern divider-bg-color">
+  <!-- BEGIN WEDDING GIFTS SECTION -->
+  <section id="giftregistry" class="section-bg-color parallax-background">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12">
-          <h1 class="section-title">Wedding Blog</h1>
+        <div class="col-md-8 col-xl-6">
+          <h2 class="section-title-lg uppercase desc"><small>Give a Gift</small><strong>to The Bride and Groom</strong></h2>
+          <div class="section-desc text-center">Bagi tamu undangan yang tidak bisa hadir, siapa tahu ada yang ingin memberikan sedikit kenang-kenangan untuk kami, bisa melakukan transfer melalui rekening dibawah ini, Terimakasih atas kesediaannya.</div>
         </div>
       </div>
 
       <div class="row">
+        <div class="col-md-8 col-xl-6" data-aos="flip-up">
+          <div class="form-wrapper flowers neela-style text-center">
+            <img src="<?= base_url('assets/images/logo-bank-permata.png') ?>" width="70%" alt="">
+            <h5 class="mt-2">Nomor Rekening : <strong id="norek">1227077472</strong></h5>
+            <h5 class="mb-2">Atas Nama : <strong>Yuris Alkhalifi</strong></h5>
+            <!-- <input type="hidden" value="1227077472" id="pilih" readonly /> -->
 
-        <!-- BEGIN BLOG MAIN CONTENT -->
-        <div class="col-sm-12">
-
-          <!-- BEGIN BLOG LISTING -->
-          <div class="blog-listing clearfix">
-            <div class="row gx-5">
-
-              <!-- BEGIN BLOG ITEM -->
-              <article class="item col-md-6">
-                <div class="image">
-                  <a href="blog-single-post.html">
-                    <span class="btn btn-light"><i class="fa fa-file-o"></i> Read More</span>
-                  </a>
-                  <img src="images/post1.jpg" alt="" width="793" height="494" />
-                </div>
-
-                <div class="date">July 20, 2021</div>
-
-                <div class="info-blog">
-                  <h3 class="post-title"><a href="blog-single-post.html">Wedding trends to obsess over this year</a></h3>
-
-                  <p>If you've always dreamt of carrying a bouquet of old fashioned garden roses down the aisle, but your budget doesn't quite match up to the dream, try this!</p>
-
-                  <div class="bottom-info">
-                    <ul class="blog-meta">
-                      <li><a href="#">Wedding</a>, <a href="#">Ideas</a>, <a href="#">Tips</a></li>
-                      <li>/ By <a href="#">WiselyThemes</a></li>
-                    </ul>
-
-                    <div class="blog-share">
-                      <a target="_blank" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.wiselythemes.com%2Fhtml%2Fneela%2Fblog-single-post.html"><i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.wiselythemes.com%2Fhtml%2Fneela%2Fblog-single-post.html%2F&amp;text=5%20ways%20to%20have%20a%20beautiful%20wedding"><i class="fab fa-twitter"></i></a>
-                      <a target="_blank" href="../../../pinterest.com/pin/create/button/indexeb31.html?url=https%3A%2F%2Fwww.wiselythemes.com%2Fhtml%2Fneela%2Fblog-single-post.html%2F&amp;description=Wedding%20trends%20to%20obsess%20over%20this%20year&amp;media=https%3A%2F%2Fwww.wiselythemes.com%2Fhtml%2Fneela%2Fimages%2Fblog-img-detail.jpg"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-              <!-- END BLOG ITEM -->
-
-              <!-- BEGIN BLOG ITEM -->
-              <article class="item col-md-6">
-                <div class="image">
-                  <a href="blog-single-post.html">
-                    <span class="btn btn-light"><i class="fa fa-file-o"></i> Read More</span>
-                  </a>
-                  <img src="images/post2.jpg" alt="" width="793" height="494" />
-                </div>
-
-                <div class="date">August 2, 2021</div>
-
-                <div class="info-blog">
-                  <h3 class="post-title"><a href="blog-single-post.html">The ultimate guide to plan your wedding</a></h3>
-
-                  <p>When you consider that the average wedding costs over $20,000, you may be thinking that there’s no way you can afford the day of your dreams.</p>
-
-                  <div class="bottom-info">
-                    <ul class="blog-meta">
-                      <li><a href="#">Wedding</a>, <a href="#">Ideas</a>, <a href="#">Tips</a></li>
-                      <li>/ By <a href="#">WiselyThemes</a></li>
-                    </ul>
-
-                    <div class="blog-share">
-                      <a target="_blank" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.wiselythemes.com%2Fhtml%2Fneela%2Fblog-single-post.html"><i class="fab fa-facebook-f"></i></a>
-                      <a target="_blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.wiselythemes.com%2Fhtml%2Fneela%2Fblog-single-post.html%2F&amp;text=DIY%3A%20A%20Garden%20Rose%20Bouquet"><i class="fab fa-twitter"></i></a>
-                      <a target="_blank" href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.wiselythemes.com%2Fhtml%2Fneela%2Fblog-single-post.html%2F&amp;description=DIY%3A%20A%20Garden%20Rose%20Bouquet&amp;media=http%3A%2F%2Fplacehold.it%2F750x580"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-              <!-- END BLOG ITEM -->
-
-            </div>
+            <button class="btn btn-primary mt-4" onclick="CopyToClipboard('norek')">Salin Nomor Rekening</button>
           </div>
-          <!-- END BLOG LISTING -->
-
-          <div class="center">
-            <a class="btn btn-primary" href="blog-listing-sidebar-right.html">View all blog posts</a>
-          </div>
-
         </div>
       </div>
     </div>
   </section>
-  <!-- END BLOG SECTION -->
+  <!-- END WEDDING GIFTS SECTION -->
 
 
   <!-- BEGIN CONTACTS SECTION -->
   <section id="rsvp" class="section-bg-color extra-padding-section">
     <div class="container">
 
-      <div class="row">
-        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2  col-xxl-6 offset-xxl-3">
+      <div class="row" data-aos="zoom-in">
+        <!-- <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2  col-xxl-6 offset-xxl-3"> -->
+
+        <div class="col-xl-6">
+          <div class="form-wrapper flowers neela-style">
+            <h1 class="section-title">Received Messages</h1>
+
+            <?php foreach ($konfirmasi_undangan as $ku) : ?>
+              <div class="row mb-2">
+                <div class="col-3 text-end">
+                  <img src="<?= base_url('assets/images/user.png') ?>" width="75px" class="rounded-circle" alt="">
+                </div>
+                <div class="col-9">
+                  <h5 class="fw-bold uppercase"><?= $ku['nm_undangan'] ?></h5>
+                  <h6><small><i class="fa-solid fa-clock"></i> 5 Menit yang lalu</small></h6>
+
+                  <p class="mt-2"><?= $ku['komentar']; ?>.</p>
+                </div>
+              </div>
+            <?php endforeach; ?>
+            <div class="row">
+              <div class="col">
+                <?= $pagination; ?>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6">
+
 
           <div class="form-wrapper flowers neela-style">
             <h1 class="section-title">Will you Attend?</h1>
@@ -918,92 +751,63 @@
             <form id="form-rsvp" method="post" action="#">
 
               <div class="form-floating">
-                <input type="text" name="Name" id="name" placeholder="Your Name*" class="form-control required fromName">
-                <label for="name">Your Name*</label>
-              </div>
-
-              <div class="form-floating">
-                <input type="email" name="E-mail" id="email" placeholder="E-mail*" class="form-control required fromEmail">
-                <label for="email">E-mail*</label>
+                <input type="text" name="Name" id="name" placeholder="<?= $nm_undangan ?>" value="<?= $nm_undangan ?>" class="form-control required fromName">
+                <label for="name">Nama Undangan</label>
               </div>
 
               <div class="form-check-wrapper">
+                <label>Konfirmasi Kehadiran</label>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input required" type="radio" name="Attend wedding" id="attend_wedding_yes">
-                  <label for="attend_wedding_yes">Yes, I will attend.</label>
+                  <label for="attend_wedding_yes">Ya, Saya akan hadir memenuhi undangan.</label>
                 </div>
 
                 <div class="form-check form-check-inline">
                   <input class="form-check-input required" type="radio" name="Attend wedding" id="attend_wedding_no">
-                  <label for="attend_wedding_no">Sorry, I can't come.</label>
+                  <label for="attend_wedding_no">Maaf, Saya belum bisa hadir.</label>
                 </div>
               </div>
-
-              <div class="form-floating">
-                <select class="form-select" aria-label="Number of guests" name="Number of Guests" id="num_guests">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                </select>
-
-                <label for="num_guests">Number of guests</label>
-              </div>
-
-              <fieldset class="form-check-wrapper required" name="Meal Preferences" id="meal_pref">
-                <label>Meal Preferences:</label>
-
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="meal_meat">
-                  <label for="meal_meat">
-                    Meat
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="meal_fish">
-                  <label for="meal_fish">
-                    Fish
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="meal_vegetarian">
-                  <label for="meal_vegetarian">
-                    Vegetarian
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="meal_gluten_free">
-                  <label for="meal_gluten_free">
-                    Gluten free
-                  </label>
-                </div>
-              </fieldset>
 
               <div class="form-floating">
                 <textarea id="message" name="Message" placeholder="Message" class="form-control" rows="4"></textarea>
-                <label for="message">Message</label>
+                <label for="message">Berikan pesan untuk kedua mempelai</label>
               </div>
 
               <div class="center">
-                <div class="g-recaptcha" data-sitekey="6LcTJDEUAAAAACOL__6CedRrCb6m2M94OSmqF4MV"></div>
-              </div>
-
-              <div class="form_status_message"></div>
-
-              <div class="center">
-                <button type="submit" class="btn btn-primary submit_form">Send</button>
+                <button type="submit" class="btn btn-primary submit_form">Kirim</button>
               </div>
             </form>
           </div>
         </div>
       </div>
+      <!-- <div class="row">
+        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2  col-xxl-6 offset-xxl-3">
+
+          <div class="form-wrapper flowers neela-style">
+            <h1 class="section-title">Received Messages</h1>
+
+            <?php foreach ($konfirmasi_undangan as $ku) : ?>
+              <div class="row mb-2">
+                <div class="col-3 text-end">
+                  <img src="<?= base_url('assets/images/yuris.jpg') ?>" width="75px" class="rounded-circle" alt="">
+                </div>
+                <div class="col-9">
+                  <h5 class="fw-bold uppercase"><?= $ku['nm_undangan'] ?></h5>
+                  <h6><small><i class="fa-solid fa-clock"></i> 5 Menit yang lalu</small></h6>
+
+                  <p class="mt-2"><?= $ku['komentar']; ?>.</p>
+                </div>
+              </div>
+            <?php endforeach; ?>
+            <div class="row">
+              <div class="col">
+                <?= $pagination; ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
     </div>
   </section>
   <!-- END CONTACTS SECTION -->
@@ -1016,23 +820,23 @@
         <div class="row">
           <div class="col-md-4">
             <div class="footer-info left">
-              Saturday, 24 September 2022 at 03:00 pm<br>
-              4181 Birchwood Ave Seal Beach, CA
+              KARTIKA PUSPITA<br>
+              Putri Pertama dari Bpk. Karsono dan Ibu Dasiroh
             </div>
           </div>
 
           <div class="col-md-4">
             <div class="footer-logo">
-              Isabella<br>
+              Kartika<br>
               <small>&</small><br>
-              Andrew
+              Yuris
             </div>
           </div>
 
           <div class="col-md-4">
             <div class="footer-info right">
-              Tel.: +0012 345 678 910<br>
-              E-mail: isabella.andrew@example.com
+              YURIS ALKHALIFI<br>
+              Putra Pertama dari Bpk. Romli dan Ibu Rina Wati
             </div>
           </div>
         </div>
@@ -1043,7 +847,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            &copy; 2021 <a href="https://www.wiselythemes.com/">WiselyThemes</a>, All Rights Reserved.
+            &copy; 2022 Made with <i class="fa-solid fa-heart"></i> by <a href="https://www.instagram.com/yuris60/" target="_blank">Yuris Alkhalifi</a>
           </div>
         </div>
       </div>

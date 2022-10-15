@@ -1,7 +1,7 @@
 /**
  * Javascript variables
  */
- 
+
 //RTL support
 var rtl = false;                                //Set to true if your website is RTL. Otherwise, keep it false.
 

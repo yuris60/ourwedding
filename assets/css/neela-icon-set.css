@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "neela-icon-set";
-  src:url("../webfonts/neela-icon-set.eot");
-  src:url("../webfonts/neela-icon-setd41d.eot?#iefix") format("embedded-opentype"),
+  src: url("../webfonts/neela-icon-set.eot");
+  src: url("../webfonts/neela-icon-set.eot?#iefix") format("embedded-opentype"),
     url("../webfonts/neela-icon-set.woff") format("woff"),
     url("../webfonts/neela-icon-set.ttf") format("truetype"),
     url("../webfonts/neela-icon-set.svg#neela-icon-set") format("svg");
@@ -41,24 +41,31 @@
 .icon-big-church:before {
   content: "\61";
 }
+
 .icon-champagne-glasses:before {
   content: "\62";
 }
+
 .icon-diamond-ring:before {
   content: "\63";
 }
+
 .icon-honeymoon:before {
   content: "\64";
 }
+
 .icon-two-hearts:before {
   content: "\65";
 }
+
 .icon-wedding:before {
   content: "\66";
 }
+
 .icon-wedding-day:before {
   content: "\67";
 }
+
 .icon-photo-camera:before {
   content: "\68";
 }

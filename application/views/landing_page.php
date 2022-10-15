@@ -60,7 +60,7 @@
             </div>
 
             <h2 class="mt-5 mb-0">Yth.</h2>
-            <h2 class="nama_undangan mb-0"><?= $nama_undangan; ?></h2>
+            <h2 class="nm_undangan mb-0"><?= $nm_undangan; ?></h2>
             <a href="<?= base_url('home/') . $this->uri->segment(2); ?>"><button class="mt-3 btn btn-light">Buka Undangan</button></a>
           </div>
 
@@ -80,7 +80,7 @@
           <div class="col-md-4">
             <div class="footer-info left">
               KARTIKA PUSPITA<br>
-              Keluarga Bpk. Karsono dan Ibu Dasiroh
+              Putri Pertama dari Bpk. Karsono dan Ibu Dasiroh
             </div>
           </div>
 
@@ -95,7 +95,7 @@
           <div class="col-md-4">
             <div class="footer-info right">
               YURIS ALKHALIFI<br>
-              Keluarga Bpk. Romli dan Ibu Rina Wati
+              Putra Pertama dari Bpk. Romli dan Ibu Rina Wati
             </div>
           </div>
         </div>
