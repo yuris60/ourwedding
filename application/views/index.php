@@ -1,3 +1,7 @@
+<!-- Music -->
+<audio hidden autoplay id="audio" src="<?= base_url('assets/music/music.mp3') ?>"></audio>
+
+
 <!-- BEGIN PRELOADER -->
 <div id="preloader">
   <div class="loading-heart">
@@ -856,3 +860,27 @@
   <!-- END FOOTER -->
 
 </div>
+
+<script>
+  // let hasPlayed = false;
+
+  // function handleFirstPlay(event) {
+  //   if (!hasPlayed) {
+  //     hasPlayed = true;
+
+  //     const vid = event.target;
+
+  //     vid.onplay = null;
+
+  //     // Start whatever you need to do after first playback has started
+  //   }
+  // }
+  document.getElementById("audio").play();
+
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome) {
+    $('#audio').remove()
+  } else {
+    $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }
+</script>
