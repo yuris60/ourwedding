@@ -54,4 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['landing/(:any)'] = 'landing/index/';
+$route['home/simpanUndangan'] = 'home/simpanUndangan/';
+$route['home/simpanUndangan/(:any)'] = 'home/simpanUndangan/';
 $route['home/(:any)'] = 'home/index/';
+$route['home/(:any)/(:any)'] = 'home/index/';

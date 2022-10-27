@@ -40,7 +40,7 @@
   <link href="<?= base_url('assets/') ?>css/owl.carousel.min.css" rel="stylesheet" />
 
   <!-- Template CSS -->
-  <link href="<?= base_url('assets/') ?>css/style.css" rel="stylesheet" />
+  <link href="<?= base_url('assets/') ?>css/style2.css" rel="stylesheet" />
 
   <!-- AOS -->
   <link href="<?= base_url('assets/') ?>vendor/aos/aos.css" rel="stylesheet" />

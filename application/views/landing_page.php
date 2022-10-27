@@ -61,7 +61,13 @@
 
             <h2 class="mt-5 mb-0">Yth.</h2>
             <h2 class="nm_undangan mb-0"><?= $nm_undangan; ?></h2>
-            <a href="<?= base_url('home/') . $this->uri->segment(2); ?>"><button class="mt-3 btn btn-light">Buka Undangan</button></a>
+            <?php
+            $segmen_nm = $this->uri->segment(2);
+            if (empty($segmen_nm)) {
+              $segmen_nm = "Tamu Undangan";
+            }
+            ?>
+            <a href="<?= base_url('home/') . $segmen_nm ?>"><button class="mt-3 btn btn-light">Buka Undangan</button></a>
           </div>
 
 

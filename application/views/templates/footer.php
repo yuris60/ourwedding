@@ -51,6 +51,7 @@
 <!-- Template Scripts -->
 <script src="<?= base_url('assets/') ?>js/variables.js"></script>
 <script src="<?= base_url('assets/') ?>js/scripts.js"></script>
+<script src="<?= base_url('assets/') ?>js/myscript.js"></script>
 
 <!-- <script src="<?= base_url('assets/') ?>js/template.settings.js"></script> -->
 
@@ -69,6 +70,34 @@
 
 <script type="text/javascript">
   function CopyToClipboard(containerid) {
+    if (document.selection) {
+      var range = document.body.createTextRange();
+      range.moveToElementText(document.getElementById(containerid));
+      range.select().createTextRange();
+      document.execCommand("copy");
+    } else if (window.getSelection) {
+      var range = document.createRange();
+      range.selectNode(document.getElementById(containerid));
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+      // alert("text copied, copy in the text-area")
+      Swal.fire({
+        icon: 'success',
+        title: 'Selamat!',
+        text: 'Nomor Rekening Berhasil Disalin!',
+        showConfirmButton: false,
+        timer: 1500,
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
+    }
+  }
+
+  function CopyToClipboard2(containerid) {
     if (document.selection) {
       var range = document.body.createTextRange();
       range.moveToElementText(document.getElementById(containerid));

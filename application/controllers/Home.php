@@ -7,6 +7,7 @@ class Home extends CI_Controller
   {
     parent::__construct();
     $this->load->model('home_model');
+    $this->load->helper('waktulalu');
     $this->load->library('pagination');
   }
 
@@ -14,14 +15,14 @@ class Home extends CI_Controller
   {
     $nm_undangan = $this->uri->segment(2);
     if (empty($nm_undangan)) {
-      $data['nm_undangan'] = "";
+      redirect('');
     } else {
       $data['nm_undangan'] = urldecode($nm_undangan);
     }
     //konfigurasi pagination
     $config['base_url'] = site_url('home/' . $nm_undangan . '/'); //site url
     $config['total_rows'] = $this->db->count_all('undangan_konfirmasi'); //total row
-    $config['per_page'] = 5;  //show record per halaman
+    $config['per_page'] = 10;  //show record per halaman
     $config["uri_segment"] = 3;  // uri parameter
     $choice = $config["total_rows"] / $config["per_page"];
     $config["num_links"] = floor($choice);
@@ -65,5 +66,19 @@ class Home extends CI_Controller
     $this->load->view('templates/header.php');
     $this->load->view('index.php', $data);
     $this->load->view('templates/footer.php');
+  }
+
+  public function simpanUndangan($nm_undangan)
+  {
+    $nm_undangan = $this->uri->segment(3);
+    if (empty($nm_undangan)) {
+      $data['nm_undangan'] = "";
+    } else {
+      $data['nm_undangan'] = urldecode($nm_undangan);
+    }
+    $this->home_model->simpanUndangan();
+    $this->session->set_flashdata('success', 'ditambahkan');
+    redirect('home/' . $data['nm_undangan']);
+    echo "ok";
   }
 }

@@ -5764,7 +5764,7 @@ section.side-flowers {
 }
 
 .form-wrapper.neela-style {
-  --offset: 11px;
+  --offset: none;
   --border-size: 1px;
   border: 42px solid #fff
 }

@@ -1,6 +1,8 @@
 <!-- Music -->
 <audio hidden autoplay id="audio" src="<?= base_url('assets/music/music.mp3') ?>"></audio>
 
+<!-- Flash Data -->
+<div class="flash-data" data-flashdata="<?= $this->session->flashdata('success'); ?>"></div>
 
 <!-- BEGIN PRELOADER -->
 <div id="preloader">
@@ -217,7 +219,7 @@
             </div>
 
             <div class="year" data-aos="fade-top" data-aos-delay="250">
-              <span class="neela-style">2019</span>
+              <span class="neela-style">2016-2022</span>
             </div>
 
             <div class="gallery-container">
@@ -400,7 +402,7 @@
           </div>
 
           <div class="center">
-            <a href="https://goo.gl/maps/tB1X4yzSj6Z33Juv5" class="btn btn-primary scrollto" target="_blank">Cek Maps</a>
+            <a href="https://goo.gl/maps/tB1X4yzSj6Z33Juv5" class="btn btn-primary scrollto" target="_blank">Klik Untuk Cek Maps</a>
           </div>
         </div>
       </div>
@@ -700,12 +702,23 @@
       <div class="row">
         <div class="col-md-8 col-xl-6" data-aos="flip-up">
           <div class="form-wrapper flowers neela-style text-center">
-            <img src="<?= base_url('assets/images/logo-bank-permata.png') ?>" width="70%" alt="">
-            <h5 class="mt-2">Nomor Rekening : <strong id="norek">1227077472</strong></h5>
-            <h5 class="mb-2">Atas Nama : <strong>Yuris Alkhalifi</strong></h5>
-            <!-- <input type="hidden" value="1227077472" id="pilih" readonly /> -->
+            <div class="mb-4">
+              <img src="<?= base_url('assets/images/logo-bank-permata.png') ?>" width="70%" alt="">
+              <h5 class="mt-2">Nomor Rekening : <strong id="norek">1227077472</strong></h5>
+              <h5 class="mb-2">Atas Nama : <strong>Yuris Alkhalifi</strong></h5>
+              <!-- <input type="hidden" value="1227077472" id="pilih" readonly /> -->
 
-            <button class="btn btn-primary mt-4" onclick="CopyToClipboard('norek')">Salin Nomor Rekening</button>
+              <button class="btn btn-primary mt-4" onclick="CopyToClipboard('norek')">Salin Nomor Rekening</button>
+            </div>
+
+            <div class="mt-2">
+              <img src="<?= base_url('assets/images/logo-dana.png') ?>" width="40%" alt="">
+              <h5 class="mt-2">Nomor Rekening : <strong id="nodana">085889369328</strong></h5>
+              <h5 class="mb-2">Atas Nama : <strong>Kartika Puspita</strong></h5>
+              <!-- <input type="hidden" value="1227077472" id="pilih" readonly /> -->
+
+              <button class="btn btn-primary mt-4" onclick="CopyToClipboard2('nodana')">Salin Nomor Dana</button>
+            </div>
           </div>
         </div>
       </div>
@@ -732,9 +745,14 @@
                 </div>
                 <div class="col-9">
                   <h5 class="fw-bold uppercase"><?= $ku['nm_undangan'] ?></h5>
-                  <h6><small><i class="fa-solid fa-clock"></i> 5 Menit yang lalu</small></h6>
+                  <h6><small><i class="fa-solid fa-clock"></i> <?= waktu_lalu($ku['tgl_komentar']) ?></small></h6>
+                  <?php if ($ku['bersedia_hadir'] == "Ya") : ?>
+                    <h6><small><span class="badge bg-success text-white">Akan Hadir</span></small></h6>
+                  <?php else : ?>
+                    <h6><small><span class="badge bg-danger text-white">Tidak Akan Hadir</span></small></h6>
+                  <?php endif; ?>
 
-                  <p class="mt-2"><?= $ku['komentar']; ?>.</p>
+                  <p class="mt-0"><?= $ku['komentar']; ?>.</p>
                 </div>
               </div>
             <?php endforeach; ?>
@@ -748,40 +766,38 @@
         </div>
         <div class="col-xl-6">
 
-
-          <div class="form-wrapper flowers neela-style">
-            <h1 class="section-title">Will you Attend?</h1>
-
-            <form id="form-rsvp" method="post" action="#">
+          <form action="<?= base_url('home/simpanUndangan/' . $nm_undangan) ?>" method="post" autocomplete="off">
+            <div class="form-wrapper flowers neela-style">
+              <h1 class="section-title">Will you Attend?</h1>
 
               <div class="form-floating">
-                <input type="text" name="Name" id="name" placeholder="<?= $nm_undangan ?>" value="<?= $nm_undangan ?>" class="form-control required fromName">
+                <input type="text" name="nm_undangan" id="nm_undangan" placeholder="<?= $nm_undangan ?>" value="<?= $nm_undangan ?>" class="form-control required fromName" required>
                 <label for="name">Nama Undangan</label>
               </div>
 
               <div class="form-check-wrapper">
                 <label>Konfirmasi Kehadiran</label>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input required" type="radio" name="Attend wedding" id="attend_wedding_yes">
+                  <input class="form-check-input required" type="radio" name="bersedia_hadir" value="Ya" checked>
                   <label for="attend_wedding_yes">Ya, Saya akan hadir memenuhi undangan.</label>
                 </div>
 
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input required" type="radio" name="Attend wedding" id="attend_wedding_no">
+                  <input class="form-check-input required" type="radio" name="bersedia_hadir" value="Tidak">
                   <label for="attend_wedding_no">Maaf, Saya belum bisa hadir.</label>
                 </div>
               </div>
 
               <div class="form-floating">
-                <textarea id="message" name="Message" placeholder="Message" class="form-control" rows="4"></textarea>
-                <label for="message">Berikan pesan untuk kedua mempelai</label>
+                <textarea id="komentar" name="komentar" placeholder="komentar" class="form-control" rows="4" required></textarea>
+                <label for="message">Berikan pesan</label>
               </div>
 
               <div class="center">
                 <button type="submit" class="btn btn-primary submit_form">Kirim</button>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
       <!-- <div class="row">
@@ -876,11 +892,4 @@
   //   }
   // }
   document.getElementById("audio").play();
-
-  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (!isChrome) {
-    $('#audio').remove()
-  } else {
-    $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-  }
 </script>
