@@ -706,7 +706,6 @@
               <img src="<?= base_url('assets/images/logo-bank-permata.png') ?>" width="70%" alt="">
               <h5 class="mt-2">Nomor Rekening : <strong id="norek">1227077472</strong></h5>
               <h5 class="mb-2">Atas Nama : <strong>Yuris Alkhalifi</strong></h5>
-              <!-- <input type="hidden" value="1227077472" id="pilih" readonly /> -->
 
               <button class="btn btn-primary mt-4" onclick="CopyToClipboard('norek')">Salin Nomor Rekening</button>
             </div>
@@ -715,7 +714,6 @@
               <img src="<?= base_url('assets/images/logo-dana.png') ?>" width="40%" alt="">
               <h5 class="mt-2">Nomor Rekening : <strong id="nodana">085889369328</strong></h5>
               <h5 class="mb-2">Atas Nama : <strong>Kartika Puspita</strong></h5>
-              <!-- <input type="hidden" value="1227077472" id="pilih" readonly /> -->
 
               <button class="btn btn-primary mt-4" onclick="CopyToClipboard2('nodana')">Salin Nomor Dana</button>
             </div>
@@ -745,7 +743,7 @@
                 </div>
                 <div class="col-9">
                   <h5 class="fw-bold uppercase"><?= $ku['nm_undangan'] ?></h5>
-                  <h6><small><i class="fa-solid fa-clock"></i> <?= waktu_lalu($ku['tgl_komentar']) ?></small></h6>
+                  <!-- <h6><small><i class="fa-solid fa-clock"></i> <?= waktu_lalu($ku['tgl_komentar']) ?></small></h6> -->
                   <?php if ($ku['bersedia_hadir'] == "Ya") : ?>
                     <h6><small><span class="badge bg-success text-white">Akan Hadir</span></small></h6>
                   <?php else : ?>
@@ -771,7 +769,7 @@
               <h1 class="section-title">Will you Attend?</h1>
 
               <div class="form-floating">
-                <input type="text" name="nm_undangan" id="nm_undangan" placeholder="<?= $nm_undangan ?>" value="<?= $nm_undangan ?>" class="form-control required fromName" required>
+                <input type="text" name="nm_undangan" id="nm_undangan" placeholder="<?= $nm_undangan ?>" value="" class="form-control required fromName" required>
                 <label for="name">Nama Undangan</label>
               </div>
 
@@ -837,9 +835,11 @@
   <footer id="footer-onepage" class="bg-color">
     <div class="footer-widget-area">
       <div class="container">
+
         <div class="row">
           <div class="col-md-4">
             <div class="footer-info left">
+              <img src="<?= base_url('assets/images/bapak_mamah_nyangkokot.png') ?>" alt="Foto Bapak Mamah" class="me-3" width="30%">
               KARTIKA PUSPITA<br>
               Putri Pertama dari Bpk. Karsono dan Ibu Dasiroh
             </div>
@@ -857,6 +857,7 @@
             <div class="footer-info right">
               YURIS ALKHALIFI<br>
               Putra Pertama dari Bpk. Romli dan Ibu Rina Wati
+              <img src="<?= base_url('assets/images/bapak_mamah_johar.png') ?>" alt="Foto Bapak Mamah" class="ms-3" width="30%">
             </div>
           </div>
         </div>

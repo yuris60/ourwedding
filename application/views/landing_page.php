@@ -56,7 +56,7 @@
             </h1>
 
             <div class="hero-subtitle light" data-aos="flip-up" data-aos-delay="1500" data-aos-duration="1500">
-              Nov <span>06</span> 2022
+              Nov <span>20</span> 2022
             </div>
 
             <h2 class="mt-5 mb-0">Yth.</h2>

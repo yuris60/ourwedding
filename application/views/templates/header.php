@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Page Title -->
-  <title>Wedding Kartika & Yuris, Minggu 06 November 2022</title>
+  <title>Wedding Kartika & Yuris, Minggu 20 November 2022</title>
 
   <meta name="keywords" content="Wedding, Kartika & Yuris">
-  <meta name="description" content="Wedding Kartika & Yuris, Minggu 06 November 2022">
+  <meta name="description" content="Wedding Kartika & Yuris, Minggu 20 November 2022">
   <meta name="author" content="Wedding Yuris & Kartika">
 
   <!-- Mobile Meta Tag -->
